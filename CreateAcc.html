@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+	.dropdown 
+		{
+				  float: left;
+				  overflow: hidden;
+		}
+
+		.dropdown .dropbtn 
+		{
+					  font-size: 17px;  
+					  border: none;
+					  outline: none;
+					  background:#ffffff;
+					  font-family:Times New Roman;
+					  font-weight: bold;
+					  padding-right:50px;
+					  
+					 
+					  
+			}
+		
+		.dropdown-content {
+				  display: none;
+				  position: absolute;
+				  min-width: 160px;
+				  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				  z-index: 1;
+				}
+
+.dropdown-content a {
+		  float: none;
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		  text-align: left;
+		  background:#ffffff;
+		}
+
+.dropdown-content a:hover 
+		{
+		  background-color: #ddd;
+		}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+</style>	
+    
+    <link rel="stylesheet" href="CreateAcc.css">
+	<link rel="stylesheet" href="Dropdown.css">
+	
+   </head>
+<body>
+  <div class="wrapper">
+    <h2>Registration</h2>
+    <form >
+      <div class="input-box">
+        <input id="t1" type="text" placeholder="Enter your name">
+      </div>
+      <div class="input-box">
+        <input id="t2" type="text" placeholder="Enter your email">
+      </div>
+      <div class="input-box">
+        <input id="t3" type="password" placeholder="Create password">
+      </div>
+      <div class="input-box">
+        <input id="t4" type="password" placeholder="Confirm password">
+      </div>
+      <div class="policy">
+        <input type="checkbox">
+        <h3>I accept all terms & condition</h3>
+      </div>
+      <div class="input-box button">
+        <input type="Submit" value="Register Now" onclick="registration()" >
+      </div>
+      <div class="text">
+        <h3>Already have an account? <a href="./Login.html">Login now</a></h3>
+      </div>
+    </form>
+  </div>
+  <script>
+	function registration()
+	{
+
+		var name= document.getElementById("t1").value;
+		var email= document.getElementById("t2").value;
+		var pwd= document.getElementById("t3").value;			
+		var cpwd= document.getElementById("t4").value;
+		
+        
+		var letters = /^[A-Za-z]+$/;
+		var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+		if(name=='')
+		{
+			alert('Please enter your name');
+		}
+		else if(!letters.test(name))
+		{
+			alert('Name field required only alphabet characters');
+		}
+		else if(email=='')
+		{
+			alert('Please enter your user email id');
+		}
+		else if (!filter.test(email))
+		{
+			alert('Invalid email');
+		}
+		
+		else if(pwd=='')
+		{
+			alert('Please enter Password');
+		}
+		else if(cpwd=='')
+		{
+			alert('Enter Confirm Password');
+		}
+		else if(pwd != cpwd)
+		{
+			alert ('Password not Matched');
+		}
+		else if(document.getElementById("t4").value.length < 6)
+		{
+			alert ('Password minimum length is 6');
+		}
+		else if(document.getElementById("t4").value.length > 12)
+		{
+			alert ('Password max length is 12');
+		}
+		else
+		{				                            
+               alert('Thank You for Login & You are Redirecting to the home page');
+			   // Redirecting to other page or webste code. 
+			   window.location.replace("./index.html"); 
+		}
+	}
+  </script>
+</body>
+</html>
