@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vardrobe | Online shopping</title>
+	<style type="text/css">
+	
+		#headernav
+		{
+		font-color:black;
+		font-size:17px;
+		diplay:inline;
+		text-align:left;
+		position:absolute;
+		padding-right:50px;
+		top:80px;
+		left:20px;
+		}
+
+		
+		a
+		{
+		text-decoration:none;
+		margin-right:50px;
+		color:Black;
+		}
+		
+		.dropdown 
+		{
+				  float: left;
+				  overflow: hidden;
+		}
+
+		.dropdown .dropbtn 
+		{
+					  font-size: 17px;  
+					  border: none;
+					  outline: none;
+					  background:#ffffff;
+					  font-family:Times New Roman;
+					  font-weight: bold;
+					  padding-right:50px;
+					  
+					 
+					  
+			}
+		
+		.dropdown-content {
+				  display: none;
+				  position: absolute;
+				  min-width: 160px;
+				  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				  z-index: 1;
+				}
+
+.dropdown-content a {
+		  float: none;
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		  text-align: left;
+		  background:#ffffff;
+		}
+
+.dropdown-content a:hover 
+		{
+		  background-color: #ddd;
+		}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+		#para
+		{
+		background-color:#ffffff;
+		width:90%;
+		border:none;
+		padding: 0px 80px 0px 80px;
+		margin:0px;
+		font-family:Cambria; 
+		font-size:20px
+	
+		}
+		
+		.responsive
+		{
+		max-width:100%;
+		
+		}
+		
+		*{
+	      box-sizing: border-box ;
+	     }
+
+	.flex-container {
+	  
+	  flex-direction:row;
+	  display: flex;
+	  align-items: center;
+	  flex-flow: row wrap;
+	  margin:55px;
+	  justify-content:space-around;
+	 
+	}
+
+	.flex-item {
+		 
+		    order: 1;  
+		    width: 420px;
+			align:center;
+			border: 3px solid grey;
+			padding: 20px 70px 20px 70px;
+			
+			margin:20px
+			font-size:20px
+			max-width:50%;
+			height:auto;
+			background:lightgrey;
+	}
+	.flex-item:hover
+	{
+	transform: scale(1.1); 
+	}
+	.flex-item img 
+	{
+	border: 1px solid white;
+	}
+
+		
+	</style>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css.map">
+
+</head>
+<body bgcolor="#ffffff">	
+	
+	<header>
+
+		<img src="logo.png" height="10%" width="10%" align="right">
+		
+		
+		<nav id="headernav">
+		
+		<b><a href="./index.html">Home</a>
+		<a href="./Aboutus.html" target="_blank">About us/Contact</a>
+		<a href="./Men's.html" target="_blank">Men's</a>
+		<a href="./womens.html" target="_blank">Women's</a>
+		<a href="./Kids.html" target="_blank">Kid's</a>
+
+		<div class="dropdown">
+				<i><button class="dropbtn">Profile</button></i>
+				<div class="dropdown-content">
+				  <a href="./CreateAcc.html">Login/Signup</a>
+				  <a href="#">Orders</a>
+				  <a href="#">Settings</a>
+				  <a href="#">Policy</a>
+				  
+		</div>
+		</div>
+		
+		<a href="#"target="_blank">Cart</a></b>
+		</nav>	
+	</header>	
+	<main>
+	<section>
+	
+		<script>
+	        var images = new Array()
+	        images = ["homebanner.jpg",
+					  "shopping4.jpg",
+					  "shopping2.jpg",
+					  "Personalcare.jpg"];
+	  
+	        setInterval("Animate()", 2000);
+	        var x = 0;
+	  
+	        function Animate() {
+	            document.getElementById("img").src = images[x]
+	            x++;
+	            if (images.length == x) {
+	                x = 0;
+	            }
+	        }
+	    </script>
+		
+			
+			<img id="img" src="./homebanner.jpg" width="1490px" height="500px" class="responsive">
+			
+			
+		
+	</section>
+	<section>
+		<article class="flex-container">
+			<div id="para">
+					<b><p><center>
+					"Personal style has to do with your own confidence. And the sense of knowing what looks good on you, and a way of expressing your individuality. 
+							Putting yourself together in an individual statement is what I most admire. And when you have confidence, I think it shows."
+							
+																																				~Ralph Lauren
+					</center>
+					</p><b>
+			</div>
+		</article>
+	</section>
+	<section>
+	<div class="flex-container">
+		
+		<div class="flex-item">
+				
+					<h3><center>Festive</center></h3>
+					<a href="#"><img src="./festive.jpg" height="350px" width="300px" class="pic"></a>
+		</div>
+		<div class="flex-item">		
+			
+					<h3><center>Casuals</center></h3>
+					<a href="#"><img src="./Casuals.jpg" height="350px" width="300px" class="pic"></a>
+		</div>
+		<div class="flex-item">	
+				
+		
+					<h3><center>Personal Care</center></h3>
+					<a href="#"><img src="./Personalcare1.jpg" height="350px" width="300px" class="pic"></a>
+		</div>
+	</div>
+	</section>	
+	</main>
+	<footer style="textalign:center;">	
+		
+	</footer>
+	
+	</body>
+ </html>
+ 
+
+
+
+
+
+
+
+
