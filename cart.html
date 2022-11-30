@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+<style>
+
+
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#headernav
+		{
+		font-color:black;
+		font-size:17px;
+		diplay:inline;
+		text-align:left;
+		position:absolute;
+		padding-right:50px;
+		top:70px;
+		left:20px;
+		font-family:Times New Roman;
+		}
+
+		
+		a
+		{
+		text-decoration:none;
+		margin-right:50px;
+		color:Black;
+		}
+		
+		.dropdown 
+		{
+				  float: left;
+				  overflow: hidden;
+		}
+
+.dropdown .dropbtn 
+		{
+					  font-size: 17px;  
+					  border: none;
+					  outline: none;
+					  background:none;
+					  font-family:Times New Roman;
+					  font-weight: bold;
+					  padding-right:50px;
+					  
+					 
+					  
+			}
+		
+.dropdown-content {
+				  display: none;
+				  position: absolute;
+				  min-width: 160px;
+				  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				  z-index: 1;
+				}
+
+.dropdown-content a {
+		  float: none;
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		  text-align: left;
+		  background:#ffffff;
+		}
+
+.dropdown-content a:hover 
+		{
+		  background-color: #ddd;
+		}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+ body{ 
+    /* color: #fff; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo-box{
+    width:100%;
+    height: 100px;
+    /* border: 2px solid red; */
+}
+.logo-box img{
+    float: right;
+    height:95px;
+    width:200px;
+}
+.navbar{
+    display:flex;
+    justify-content:space-between;
+}
+.nav ul{
+    display:flex;
+    list-style-type: none;
+    gap: 30px;
+    margin:0px 80px;
+}
+.navbar a{
+    /* color: #fff; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:15px;
+    text-decoration: none;
+    color: #000;
+    /* border-bottom:2px solid #fff; */
+    border-bottom:2px solid #000;
+    font-weight: bold;
+}
+
+.main-div{
+    width: 90%;
+    /* border: 2px solid red; */
+    margin:40px auto;
+    display: flex;
+}
+.logo{
+    display:flex;
+    gap:10px;
+    width:100px;
+    margin:20px 50px;
+    /* border: 2px solid red; */
+}
+.logo-image{
+    width:30px;
+    height: 25px;
+}
+.logo-image img{
+    width: 100%;
+    height: 100%;
+}
+.logo p{
+    font-weight: bold;
+    font-size:15px;
+}
+.left-box{
+    width: 50%;
+    /* border: 2px solid green; */
+}
+
+.left-image-box{
+    margin:40px 100px;
+    /* border: 2px solid red; */
+}
+.image-box{
+    width:200px;
+    height: 250px;
+    margin-top: 30px;
+}
+.image-box img{
+    width: 100%;
+    height: 100%;
+}
+.imageAndcontent-box{
+    /* border: 2px solid pink; */
+    display: flex;
+}
+.content-box{
+    margin:130px 30px;
+}
+.content-box p{
+    font-size: 13px;
+    font-weight: bold;
+    line-height:22px;
+    text-align: center;
+}
+.left-box .btn{
+    /* background-color: rgb(221, 227, 221); */
+    padding:10px 40px;
+    font-weight: bold;
+    margin: 0 350px;
+}
+.right-box{
+    width: 40%;
+    /* border: 2px solid rgb(13, 0, 128); */
+}
+.right-box p{
+    text-transform: uppercase;
+    /* color: #fff; */
+    color: #000;
+    font-size: 13px;
+    word-spacing:5px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 0px 150px;
+}
+.right-image-box{
+    /* border: 2px solid rgb(0, 255, 55); */
+}
+.image-box-right{
+    width:200px;
+    height: 300px;
+    margin-top: 5px;
+}
+.image-box-right img{
+    width: 100%;
+    height: 100%;
+}
+.right-image-box{
+    margin:20px 30%;
+    /* border: 3px solid red; */
+}
+.vertical-line{
+    width: 2px;
+    height: 850px;
+    background-color: #000;
+}
+
+</style>
+</head>
+<body>
+<header>
+    <div class="logo-box">
+        <img src="Logo.png" alt="">
+    </div>
+
+    <header>
+
+		<nav id="headernav">
+		<b><a href="./index.html">Home</a>
+		<a href="./Aboutus.html" target="_blank">About us/Contact</a>
+		<a href="./Men's.html" target="_blank">Men's</a>
+		<a href="./womens.html" target="_blank">Women's</a>
+		<a href="./Kids.html" target="_blank">Kid's</a>
+		
+		<div class="dropdown">
+				<i><button class="dropbtn">Profile</button></i>
+				<div class="dropdown-content">
+				  <a href="./profile.html">Profile</a>
+				  <a href="./CreateAcc.html">Login/Signup</a>
+				  <a href="#">Orders</a>
+				  <a href="#">Settings</a>
+				  <a href="#">Policy</a>
+				  
+		</div>
+		</div>
+		
+		<a href="./cart.html"target="_blank">Cart</a></b>
+		<br><br><br>
+		
+		</nav>	
+	</header>	
+
+</header>
+<main>
+    <div class="main-div">
+
+        <div class="left-box">
+            <div class="logo">
+                <div class="logo-image">
+                    <img src="Screenshot 2022-11-09 at 12.23 1.png" alt="">
+                </div>
+                <p>CART</p>
+            </div>
+
+          <div class="left-image-box">
+            <div class="imageAndcontent-box">
+            <div class="image-box">
+                <img src="Screenshot 2022-11-09 at 12.32 1.png" alt="">
+            </div>
+            <div class="content-box">
+                <p>RED KURTA SET</p>
+                <p>Rs 2800</p>
+            </div>
+          </div>
+          <div class="imageAndcontent-box">
+            <div class="image-box">
+                <img src="Screenshot 2022-11-09 at 12.35 1.png" alt="">
+            </div>
+            <div class="content-box">
+                <p>GREY LONG TOP</p>
+                <p>Rs 1800</p>
+            </div>
+            </div>
+          </div>
+			
+          <a href="./Payment.html"><button class="btn">PAYMENT</button></a>
+        </div>
+
+        <div class="vertical-line"></div>
+        <div class="right-box">
+            <p>similar design</p>
+            <div class="right-image-box">
+                <div class="image-box-right">
+                    <img src="Screenshot 2022-11-09 at 12.48 1.png" alt="">
+                </div>
+        
+            
+                <div class="image-box-right">
+                    <img src="Screenshot 2022-11-09 at 12.53 1.png" alt="">
+                </div>
+            
+            </div>
+              
+        </div>
+    </div>
+</main>
+   <footer>
+	<center><p> Copyright © 2022, Vardrobe</p></center>
+	</footer>
+</body>
+</html>

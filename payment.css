@@ -1,0 +1,157 @@
+* { 
+
+  margin: 0; 
+
+  padding: 0; 
+} 
+
+#headernav
+{
+		font-color:black;
+		font-size:17px;
+		diplay:inline;
+		text-align:left;
+		position:absolute;
+		padding-right:50px;
+		top:80px;
+		left:20px;
+}
+
+		
+a
+{
+		text-decoration:none;
+		margin-right:50px;
+		color:Black;
+}
+  
+body { 
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; 
+
+  font-weight: bold; 
+}
+  
+
+  
+.text { 
+
+  text-align: center; 
+
+  font-size: 300%; 
+
+  text-decoration: aliceblue; 
+
+  color: aliceblue; 
+} 
+
+  
+.course { 
+
+  color: black; 
+
+  font-size: 25px; 
+
+  font-weight: bolder; 
+} 
+
+  
+
+
+  
+
+.centre-content-h1 { 
+
+  padding-top: 30px; 
+
+  padding-bottom: 30px; 
+
+  font-weight: normal; 
+} 
+
+  
+.price { 
+
+  font-size: 60px; 
+
+  margin-left: 5px; 
+
+  bottom: 15px; 
+
+  position: relative; 
+} 
+
+.pay-now-btn:hover
+ {
+transform: scale(1.1);	 
+ }
+ 
+.pay-now-btn { 
+
+  cursor: pointer; 
+
+  color: #fff; 
+
+  height: 50px; 
+
+  width: 290px; 
+
+  border: none; 
+
+  margin: 5px 30px; 
+
+  background:grey; 
+
+  position: relative;
+ 
+} 
+
+  
+.card-details { 
+
+  background: grey; 
+
+  color: rgb(225, 223, 233); 
+
+  margin: 20px 300px 20px 300px; 
+
+  padding: 10px; 
+
+  /* border-bottom-left-radius: 80px; */
+} 
+
+  
+.card-details p { 
+
+  font-size: 15px; 
+} 
+
+  
+.card-details label { 
+
+  font-size: 15px; 
+
+  line-height: 35px; 
+} 
+
+.submit-now-btn:hover
+{
+transform: scale(1.1);		
+}
+
+.submit-now-btn { 
+
+  cursor: pointer; 
+
+  color: #000; 
+
+  height: 30px; 
+
+  width: 240px; 
+
+  border: none; 
+
+  margin: 5px 30px; 
+
+  background:lightgrey; 
+}
