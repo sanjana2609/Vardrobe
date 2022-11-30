@@ -35,7 +35,7 @@
 					  font-size: 17px;  
 					  border: none;
 					  outline: none;
-					  background:#ffffff;
+					  background:default;
 					  font-family:Times New Roman;
 					  font-weight: bold;
 					  padding-right:50px;
@@ -75,7 +75,7 @@
 	</style>
 
     <link rel="stylesheet" href="Login.css">
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
@@ -91,7 +91,7 @@
 		<a href="./Kids.html" target="_blank">Kid's</a>
 
 		<div class="dropdown">
-				<i><button class="dropbtn">Profile</button></i>
+				<button class="dropbtn">Profile</button>
 				<div class="dropdown-content">
 				  <a href="./login.html">Login/Signup</a>
 				  <a href="#">Orders</a>
@@ -109,16 +109,16 @@
   
 
 <main>
-   <center> <div align="center" class="col-sm-12 container">
+   <center> <div align="center" class="container">
 		
       <form action="#">
         <div class="title">Login</div>
         <div class="input-box underline">
-          <input id="v1" type="text" placeholder="Enter Your Email" required>
+          <input id="v1" type="email" placeholder="Enter Your Email"  onblur="validateEmail()"required>
           <div class="underline"></div>
         </div>
         <div class="input-box">
-          <input id="v2" type="password" placeholder="Enter Your Password" required>
+          <input id="v2" type="password" placeholder="Enter Your Password"  pattern="[A-za-z0-9 ]{6,12}" onblur="validatePass()" required>
           <div class="underline"></div>
         </div>
         <div class="input-box button">
@@ -137,34 +137,29 @@
 </main>
 
 <script>
-	function validate()
-	{
-
-		var email= document.getElementById("v1").value;
-		var pwd= document.getElementById("v2").value;
-		
-		
-		if(email==null || email=='')
-		{
-			alert('Please enter your user email id');
-			return false;
-		}
-		
-		else if(pwd=='')
-		{
-			alert('Please enter Password');
-		}
-		else if(pwd.length < 6)
-		{
-			alert ('Password minimum length is 6');
-		}
-		else
-		{				                            
-               alert('Thank You for Login & You are Redirecting to the home page');
-		window.location.href="./index.html";	  
-		}
+    function validatePass()
+    {
+        var pass=document.getElementById("v2");
+        if(pass.validity.patternMismatch)
+        {
+              pass.setCustomValidity("This field requires 6 digits");
+              pass.reportValidity();
+        }
+        else
+        {
+              pass.setCustomValidity("");
+        }
+    }
+   function validate()
+    {
+         if(v1.checkValidity() && v2.checkValidity())
+        {
+                alert("Sucessfully Registered");
+        }
+    }
 </script>
  
   </body>
 </html>
+
 
